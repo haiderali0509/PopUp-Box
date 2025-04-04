@@ -39,7 +39,7 @@ input, button, textarea, select {
     background-color: rgb(242, 255, 229);
     color: rgb(66, 87, 39);
 }
-.modal .active{
+.modal.active{
     transform: translate(-50%, -50%) scale(1);
     transition: 200ms ease-in-out;
 }
@@ -67,7 +67,7 @@ input, button, textarea, select {
 }
 #overlay{
     position: fixed;
-    opacity: 1;
+    opacity: 0;
     transition: 200ms ease-in-out;
     top: 0;
     left: 0;
@@ -76,7 +76,7 @@ input, button, textarea, select {
     background-color: rgba(0, 0, 0, 0.5);
     pointer-events: none;
 }
-#overlay .active{
+#overlay.active{
     pointer-events: all;
     opacity: 1;
 }
